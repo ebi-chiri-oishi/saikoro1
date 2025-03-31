@@ -1,0 +1,23 @@
+# ninja log v5
+3	1493	1742551845580001711	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	2b6acd7575c3964
+5	102	1742551844190984323	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c6f43a6b80e0e2f6
+4	936	1742551845020994715	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	297d05b28c33cbad
+4	1408	1742551845493000623	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	9b6d80c25fd02992
+3	745	1742551844828992311	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	8f781aa6e35f79d4
+4	946	1742551845029994827	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1128b9fd5694c6f0
+102	195	1742551844282985475	/home/ebichiri/saikoro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4d4y5r5c/obj/arm64-v8a/libswappywrapper.so	5b9497f236053727
+3	976	1742551845061995228	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	289e9befcb23fd7f
+1493	1519	1742551845608002062	/home/ebichiri/saikoro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4d4y5r5c/obj/arm64-v8a/libgame.so	b8c949c65e2bab69
+4	787	1742551844870992837	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b2a6be1a51e55045
+5	1080	1742551845163996505	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	114234cbec5eb1c
+9	141	1742897834269836201	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c6f43a6b80e0e2f6
+142	275	1742897834399839895	/home/ebichiri/saikoro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4d4y5r5c/obj/arm64-v8a/libswappywrapper.so	5b9497f236053727
+5	692	1742897834818851802	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1128b9fd5694c6f0
+8	755	1742897834883853649	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	114234cbec5eb1c
+3	774	1742897834900854132	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	8f781aa6e35f79d4
+7	885	1742897835013857343	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	297d05b28c33cbad
+8	951	1742897835078859190	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b2a6be1a51e55045
+4	979	1742897835107860014	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	289e9befcb23fd7f
+6	1209	1742897835336866521	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	9b6d80c25fd02992
+3	1216	1742897835345866777	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	2b6acd7575c3964
+1217	1242	1742897835372867544	/home/ebichiri/saikoro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4d4y5r5c/obj/arm64-v8a/libgame.so	b8c949c65e2bab69
