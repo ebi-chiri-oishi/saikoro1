@@ -99,8 +99,18 @@ public class WrapperScript : MonoBehaviour
     public Vector2 InputPosition(){
         Mouse mouse = Mouse.current;
         Touchscreen touch = Touchscreen.current;
-        Vector2 position = mouse.position.value;
-        Debug.Log(position);
+        if(mouse != null && touch != null){
+            Vector2 position = mouse.position.value + touch.position.value;
+            Debug.Log(position);
         return position;
+        }else if(mouse != null){
+            Vector2 position = mouse.position.value;
+            return position;
+        }else if(touch != null){
+            Vector2 position = touch.position.value;
+            return position;
+        }else{
+            return Vector2.zero;
+        }
     }
 }

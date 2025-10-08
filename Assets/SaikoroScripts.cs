@@ -26,7 +26,7 @@ public class SaikoroScripts : MonoBehaviour
     void Update()
     {
         Keyboard keyboard = Keyboard.current;
-        if(keyboard.aKey.IsPressed() && keyboard.bKey.IsPressed() && keyboard.xKey.IsPressed()){
+        if(keyboard != null && keyboard.aKey.IsPressed() && keyboard.bKey.IsPressed() && keyboard.xKey.IsPressed()){
             SceneManager.LoadScene("SaikoroScene");
         }
         if(wrapperScript.OnInputButtonDown(0)){
@@ -34,7 +34,6 @@ public class SaikoroScripts : MonoBehaviour
         }
         if(wrapperScript.OnInputButtonUp(0)){
             resultTime = Time.time - time;
-            Debug.Log(resultTime);
             if(resultTime > 1){
                 SceneManager.LoadScene("SaikoroScene");
             }
@@ -56,13 +55,12 @@ public class SaikoroScripts : MonoBehaviour
         }
     }
     
-    public void ModeChange(){
+    public void ChangePositionMode(){
         if(mode==0){
             mode = 1;
         }else{
             mode = 0;
         }
-        text.text = "PosMode:" + mode;
     }
     public void ChangeScene(){
         SceneManager.LoadScene("SaikoroScene");

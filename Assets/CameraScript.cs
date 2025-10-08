@@ -22,11 +22,5 @@ public class CameraScript : MonoBehaviour
     }
     public void EnableCameraScript(){
         cameraScriptEnabled = !cameraScriptEnabled;
-        if(cameraScriptEnabled){
-            text.text = "CamMode:" +0;
-        }else{
-            text.text = "CamMode:" +1;
-        }
-        
     }
 }
