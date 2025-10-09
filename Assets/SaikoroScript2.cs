@@ -44,6 +44,6 @@ public class SaikoroScript2 : MonoBehaviour
         
     }
     public void ChangeScene(){
-        SceneManager.LoadScene("SampleScene2");
+        SceneManager.LoadScene("NormalScene");
     }
 }
