@@ -416,7 +416,7 @@ MonoBehaviour:
     - line: '|   m_BuildTargetBatching:'
     - line: '|   - m_BuildTarget: Standalone'
     - line: '|     m_StaticBatching: 1'
-    - line: '|     m_DynamicBatching: 0'
+    - line: '|     m_DynamicBatching: 1'
     - line: '|   - m_BuildTarget: tvOS'
     - line: '|     m_StaticBatching: 1'
     - line: '|     m_DynamicBatching: 0'

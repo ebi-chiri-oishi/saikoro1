@@ -10,7 +10,6 @@ public class SaikoroScripts : MonoBehaviour
     float time;
     float resultTime;
     int mode;
-    public TextMeshProUGUI text;
 
     public WrapperScript wrapperScript;
 
@@ -29,10 +28,10 @@ public class SaikoroScripts : MonoBehaviour
         if(keyboard != null && keyboard.aKey.IsPressed() && keyboard.bKey.IsPressed() && keyboard.xKey.IsPressed()){
             SceneManager.LoadScene("SaikoroScene");
         }
-        if(wrapperScript.OnInputButtonDown(0)){
+        if(wrapperScript.OnInputButtonDown()){
             time = Time.time;
         }
-        if(wrapperScript.OnInputButtonUp(0)){
+        if(wrapperScript.OnInputButtonUp()){
             resultTime = Time.time - time;
             if(resultTime > 1){
                 SceneManager.LoadScene("SaikoroScene");

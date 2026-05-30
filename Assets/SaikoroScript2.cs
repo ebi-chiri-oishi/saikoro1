@@ -8,8 +8,6 @@ public class SaikoroScript2 : MonoBehaviour
     public GameObject saikoro;
     Rigidbody rb;
     public WrapperScript wrapperScript;
-    float time;
-    float resultTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,21 +21,14 @@ public class SaikoroScript2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(wrapperScript.OnInputButtonDown(0)){
+        if(wrapperScript.OnInputButtonDown()){
             saikoro.transform.position = new Vector3(0,saikoro.transform.position.y,saikoro.transform.position.z);
             firstPosition = wrapperScript.InputPosition();
-            time = Time.time;
         }
-        if(wrapperScript.OnInputButtonUp(0)){
-            resultTime = Time.time - time;
-            Debug.Log(resultTime);
+        if(wrapperScript.OnInputButtonUp()){
             secoundPosition = wrapperScript.InputPosition();
             Vector2 position = firstPosition - secoundPosition;
             var angle = Mathf.Atan2(position.x, position.y);
-            Debug.Log(angle);
-            float sqrt = Mathf.Sqrt((secoundPosition.x - firstPosition.x) *( secoundPosition.x - firstPosition.x) + (secoundPosition.y - firstPosition.y) * (secoundPosition.y - firstPosition.y));
-            Debug.Log(sqrt);
-            Debug.Log((angle + 360) % 360);
             saikoro.transform.eulerAngles = new Vector3(0,(angle + 360) % 360,0);
             rb.AddForce(new Vector3(secoundPosition.x - firstPosition.x * 2,secoundPosition.y - firstPosition.y * 2,(secoundPosition.x - firstPosition.x) * (secoundPosition.y - firstPosition.y) * 0.01F));
         }
