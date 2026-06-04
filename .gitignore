@@ -7,3 +7,5 @@ UserSettings/
 Temp/
 .vscode/
 .vsconfig
+Assembly-CSharp.csproj
+saikoro.slnx
